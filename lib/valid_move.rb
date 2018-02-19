@@ -7,9 +7,9 @@ def valid_move?(board, index)
   else
     occupancy = position_taken(board, index)
     if occupancy == true
-      return true
-    else 
       return false
+    else 
+      return true
     end
   end
 end
