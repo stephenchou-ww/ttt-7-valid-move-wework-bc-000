@@ -5,7 +5,7 @@ def valid_move?(board, index)
     puts "not a position on the board!"
     return false
   else
-    occupancy = position_taken(board, index)
+    occupancy = position_taken?(board, index)
     if occupancy == true
       return false
     else 
