@@ -1,12 +1,17 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
-  if index
-  
-  occupancy = position_taken(board, index)
-  
-  
-  
+  if index >= 9 || index < 0
+    puts "not a position on the board!"
+    return false
+  else
+    occupancy = position_taken(board, index)
+    if occupancy == true
+      return true
+    else 
+      return false
+    end
+  end
 end
 
 
